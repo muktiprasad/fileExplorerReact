@@ -13,6 +13,7 @@ const TreeView = ({ data, onSelection, onToggle }) => {
 		const directoryTree = await api.deleteById(data, id);
 		console.log("directoryTree ",directoryTree);
 		console.log('getDirectoryTree',await api.getDirectoryTree())
+		alert(`${id} need to be deleted`)
 	}
 	return data.map(node => {
 		return (
